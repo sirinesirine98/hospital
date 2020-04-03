@@ -11,9 +11,18 @@
 |
 */
 
-Route::get('/', function () {
+ Route::get('/', function () {
     return view('welcome');
 });
+
+
+//Route::get('/','FrontendController@index');
+//Route::get('/about-us','FrontendController@aboutus');
+//Route::get('/about-us','FrontendController@aboutus');
+//Route::get('/about-us','FrontendController@aboutus');
+
+
+
 
 
 Auth::routes();
@@ -27,6 +36,13 @@ Route::group(['middledware' => ['auth' , 'admin']], function(){
         return view('admin.dashboard');
 });
 
+
+
     Route::get('/role-register', 'Admin\DashboardController@registered');
+    Route::put('/role-register-update/{id}','Admin\DashboardController@registerupdate');
+    Route::delete('/role-delete/{id}','Admin\DashboardController@registerdelete');
+
+    Route::get('/abouts', 'Admin\AboutusController@index');
+    Route::post('/save-abouts', 'Admin\AboutusController@store');
 });
 

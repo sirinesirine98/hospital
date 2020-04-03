@@ -54,14 +54,14 @@
               <p>Maps</p>
             </a>
           </li>
-          <li>
-            <a href="./notifications.html">
+          <li class="{{ 'abouts' ==request()->path() ? 'active' :'' }}">
+            <a href="/abouts">
               <i class="now-ui-icons ui-1_bell-53"></i>
-              <p>Notifications</p>
+              <p>About Us</p>
             </a>
           </li>
 
-          <li>
+          <li class="{{ 'role-register' ==request()->path() ? 'active' :'' }}">
             <a href="/role-register">
               <i class="now-ui-icons users_single-02"></i>
               <p>User Profile</p>

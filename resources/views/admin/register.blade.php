@@ -31,9 +31,12 @@
                           <td>888</td>
                           <td>email@gmail.com</td>
                           <td>
-                          <a href="#" class="btn btn-success">EDIT</a></td>                       </td>
-                          <a href="#" class="btn btn-danger">DELETE</a></td>                       </td>
-                        </tr>
+                              <a href="#" class="btn btn-success">EDIT</a>
+                          </td>
+                          <td>
+                              <a href="#" class="btn btn-danger">DELETE </a>
+                          </td>  
+                      </tr>
                     </tbody> 
                   
                   </table>
